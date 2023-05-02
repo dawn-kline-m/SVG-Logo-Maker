@@ -60,6 +60,7 @@ Triangle.
 ## Deliverables
 
 The following walkthrough video demonstrates the functionality of the application and passing tests:
+https://watch.screencastify.com/v/NEcDs1zwj6aJRbz8WNlh
 
 The URL of the GitHub repository: https://github.com/dawn-kline-m/SVG-Logo-Maker
 
