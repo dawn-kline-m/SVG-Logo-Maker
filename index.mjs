@@ -15,7 +15,7 @@ const createSVG = (answers) => {
     else {
         shape = new Triangle(shapeColor);
     }
-    shape.setColor(textColor);
+    shape.setColor(shapeColor);
 
     let shapeInfo =
         `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@ inquirer
         {
             type: 'input',
             name: 'letterCode',
-            message: 'Type in three characters',
+            message: 'Enter up to three characters:',
         },
         {
             type: 'list',
@@ -44,18 +44,18 @@ inquirer
         {
             type: 'input',
             name: 'textColor',
-            message: 'What is the color text:',
+            message: 'What is the color (OR a hexadecimal number) of the text:',
         },
         {
             type: 'input',
             name: 'shapeColor',
-            message: 'What is the color of the shape:',
+            message: 'What is the color (OR a hexadecimal number) of the shape:',
         },
     ])
     .then((answers) => {
         const newSVGFile = createSVG(answers);
-        fs.writeFile('new.svg', newSVGFile, (err) =>
-            err ? console.error(err) : console.log('new.svg generated successfully!')
+        fs.writeFile('logo.svg', newSVGFile, (err) =>
+            err ? console.error(err) : console.log('Generated logo.svg')
 
         );
 
