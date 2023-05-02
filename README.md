@@ -10,8 +10,7 @@ Each shape class is tested for a `render()` method that returns a string for the
 
 ## User Specifications
 
-AS a freelance web developer, the developer wants to generate a simple logo for projects
-to avoid paying a graphic designer.
+AS a freelance web developer, the developer wants to generate a simple logo for projects to avoid paying a graphic designer.
 
 ## Functionality
 
